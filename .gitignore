@@ -1,0 +1,7 @@
+.idea/
+__pycache__/
+*.py[cod]
+shape_predictor_68_face_landmarks.dat
+output_*.jpg
+Thumbs.db
+.DS_Store
