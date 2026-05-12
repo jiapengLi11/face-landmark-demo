@@ -1,19 +1,21 @@
 # Face Landmark Demo
 
-This is a small practice project for face landmark detection and facial region visualization using `dlib` and `OpenCV`.
+## Overview
 
-## Included
+This repository is a small practice project for face landmark detection and facial region visualization using `dlib` and `OpenCV`.
+
+## Tech Stack
+
+- Python
+- dlib
+- OpenCV
+
+## Project Structure
 
 - `landmark_points.py`: detect a face and draw the 68 landmark points
 - `visualize_face_parts.py`: highlight facial regions such as eyes, eyebrows, nose, mouth, and jaw
-- `sample_images/`: example images used for local testing
+- `sample_images/`: local test images
 - `figures/`: screenshots from earlier experiments
-
-## Not Included
-
-The repository does **not** include `shape_predictor_68_face_landmarks.dat`.
-
-That file is large and should be downloaded separately from dlib / iBUG resources.
 
 ## Setup
 
@@ -21,13 +23,13 @@ That file is large and should be downloaded separately from dlib / iBUG resource
 pip install -r requirements.txt
 ```
 
-Download the dlib predictor file and place it in the project root:
+Download the dlib predictor file separately and place it in the project root:
 
 ```text
 shape_predictor_68_face_landmarks.dat
 ```
 
-## Run
+## Usage
 
 Draw landmark points:
 
@@ -43,5 +45,5 @@ python visualize_face_parts.py --shape-predictor shape_predictor_68_face_landmar
 
 ## Notes
 
-- This project is a cleaned version of an older local practice folder.
-- The focus is demonstration and visualization, not training a new landmark model.
+- The repository does not include `shape_predictor_68_face_landmarks.dat`.
+- This project is focused on visualization and demo usage, not on training a new landmark model.
